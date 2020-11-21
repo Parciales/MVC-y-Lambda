@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Temperatura</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <table class="table table-striped">
+            <tr color="#4971E4">
+                <td align="center">Lunes</td>
+                <td align="center">Martes</td>
+                <td align="center">Miercoles</td>
+                <td align="center">Jueves</td>
+                <td align="center">Viernes</td>
+                <td align="center">Sabado</td>
+                <td align="center">Domingo</td>
+            </tr>
+            <tr>
+                <td align="center">@Model.Templ ºC</td>
+                <td align="center">@Model.Tempm ºC</td>
+                <td align="center">@Model.TempMi ºC</td>
+                <td align="center">@Model.TempJ ºC</td>
+                <td align="center">@Model.TempV ºC</td>
+                <td align="center">@Model.TempS ºC</td>
+                <td align="center">@Model.TempD ºC</td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">Temperatura Promedio</td>
+                <td align="center"><h3>@Model.Resultado ºC</h3></td>
+                <td align="center">Info</td>
+                <td align="center" colspan="3"><i>@Model.mess</i></td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>
